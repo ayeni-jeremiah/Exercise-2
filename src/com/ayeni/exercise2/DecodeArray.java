@@ -2,11 +2,12 @@ package com.ayeni.exercise2;
 
 public class DecodeArray {
 
-	int[] A;
-	int length;
-	int[] previousA;
-	int[] previousB;
+	int[] A; //received array
+	int length; //length of received array
+	int[] previousA; //variable to store retrieved Array A
+	int[] previousB; //variable to store retrieved Array B
 
+	//constructor to help initialize previous arrays lenght
 	public DecodeArray(int[] A) {
 		this.A = A;
 		this.length = A.length;
@@ -14,7 +15,7 @@ public class DecodeArray {
 		this.previousB = new int[length];
 	}
 
-	// converyt Decimal To Binary
+	// convert Decimal To Binary
 	private String convertToBinary(int decimal) {
 		return Integer.toBinaryString(decimal);
 	}
@@ -35,7 +36,7 @@ public class DecodeArray {
 			AB[1] = second;
 			return AB;
 		} else {
-			//B was mostlikely 0
+			//previous B value was most-likely 0
 			AB[0] = binary;
 			AB[1] = "0";
 			return AB;

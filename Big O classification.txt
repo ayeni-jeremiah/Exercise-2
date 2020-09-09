@@ -1,0 +1,3 @@
+QUESTION 2 
+	2. The Classification of the Algorithm is O(N) 
+		Reason is, as the size of the array increases, the amount of processing required increases at the same rate

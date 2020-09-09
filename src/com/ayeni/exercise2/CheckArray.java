@@ -13,21 +13,21 @@ public class CheckArray {
 		array.encodeArray();
 		
 		int[] newArray = array.newArray;
-		for (int i = 0; i < newArray.length; i++) {
-			System.out.println(newArray[i]);
-		}
+//		for (int i = 0; i < newArray.length; i++) {
+//			System.out.println(newArray[i]);
+//		}
 		
 		//TO DECODE ARRAY
 		DecodeArray array2 = new DecodeArray(newArray);
 		
 		array2.decodeArray();
-		int[] retrievedA = array2.previousA;
-		int[] retrievedB = array2.previousB;
-		
-		for (int i = 0; i < n; i++) {
-			System.out.println(retrievedA[i]);
-			System.out.println(retrievedB[i]);
-		}
+//		int[] retrievedA = array2.previousA;
+//		int[] retrievedB = array2.previousB;
+//		
+//		for (int i = 0; i < n; i++) {
+//			System.out.println(retrievedA[i]);
+//			System.out.println(retrievedB[i]);
+//		}
 	}
 
 }
